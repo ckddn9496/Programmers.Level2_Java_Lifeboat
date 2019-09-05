@@ -1,2 +1,13 @@
 # Programmers.Level2_Java_Lifeboat
-Programmers Greedy Level2_Lifeboat
+
+## 프로그래머스 Greedy > 구명보트
+
+### 1. 문제설명
+문제: https://programmers.co.kr/learn/courses/30/lessons/42885
+
+input으로 사람들의 몸무게 배열 int[] people과 구명보트이 제한 무게 limit이 들어온다. 하나의 구명보트에 최대 2명씩 탈 수 있으며 무게제한이 있을 때, 모든 사람을 구출하는데 필요한 구명보트의 최소 갯수를 return하는 문제
+
+### 2. 풀이
+문제를 잘 읽지 않으면 DP의 0/1 KnapSack Problem으로 인식하게 되는 문제. 구명보트에 탈 수 있는 최대 인원수는 <b>2명</b> 이라는 것을 알게된 순간 2명이 탈 조합을 (최대무게를 가진 사람 + 최소무게를 가진 사람) 으로 검사하는것임을 알 수 있다.
+
+최대 무게를 가진사람과 남은 제한 무게 보다 작으며 가장 무거운 사람을 태우는것이 최적으로 보일 수 있지만 최대 2명이라는 조건으로 인해 그렇게 할 필요가 없어진 문제...
